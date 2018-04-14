@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+$primary: #0cd07e;
+$secondary: #f37978;
+$tertiary:#b285a4;
+$font-body: 'Open Sans', sans-serif;
+$text-color:#111111;
+$hover-color:$primary;
+$bg:#eeeeee;
+$grey:#717171;
+$bar1:#f37978;
+$bar2:#b285a4;
+$bar3:#80819f;
+$bar4:#637194;
+
+// Boilerplate code
+
+.ir {
+
+  display:block;
+  text-indent:200%;
+  white-space:nowrap;
+  overflow:hidden;
+
+}
+
+* {
+  box-sizing:border-box;
+}
+
+img {
+
+  max-width:100%;
+  height:auto;
+
+}
+
+.row {
+  margin:0;
+}
+
+@mixin flexbox() {
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-wrap:wrap;
+  flex-wrap:wrap;
+}
+
+::selection {
+    background: $tertiary;
+}
