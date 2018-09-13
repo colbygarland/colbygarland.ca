@@ -1,0 +1,135 @@
+$bg: #fff;
+$sleeve:#755845;
+
+.cups {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: #ffffff;
+  font-family:'Lobster', serif;
+}
+
+h1 {
+  text-align:center;
+  font-size:50px;
+}
+
+.counter {
+  font-family: 'VT323', monospace;
+  color:#067655;
+  font-size:70px;
+}
+
+.cup {
+  position:relative;
+  width:250px;
+}
+
+.lid {
+  
+  width:200px;
+  background:#eee;
+  height:50px;
+  position:relative;
+  top:40px;
+  left:30px;
+  
+  &:before, &:after {
+    content:'';
+    height:100%;
+    width:20px;
+    background:#eee;
+    display:block;
+    position:absolute;
+    top:0;
+    left:-10px;
+    transform:skew(-10deg);
+  }
+  
+  &:after {
+    left:auto;
+    right:-10px;
+    transform:skew(10deg);
+  }
+  
+}
+
+.seperator {
+  
+  height:25px;
+  width:250px;
+  background:#d6d6d6;
+  position:absolute;
+  top:90px;
+  left:5px;
+  
+}
+
+$cup-bg: #eee;
+$cup-height:350px;
+.body {
+  
+  width:230px;
+  height:$cup-height;
+  background:$cup-bg;
+  position:absolute;
+  top:115px;
+  left:15px;
+  
+  &:before {
+    content:'';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: $cup-height 0 0 20px;
+    border-color: transparent transparent transparent $bg;
+    position:absolute;
+    bottom:0;
+    left:0;
+    z-index:2;
+  }
+  &:after {
+    content:'';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 $cup-height 20px;
+    border-color: transparent transparent $bg transparent;
+    position:absolute;
+    bottom:0;
+    right:0;
+    z-index:2;
+  }
+  
+}
+
+.sleeve {
+  
+  background:$sleeve;
+  height:140px;
+  width:220px;
+  position:absolute;
+  top:200px;
+  left:20px;
+  z-index:1;
+  
+  &:before {
+    content:'';
+    background-image:url(../img/starbucks-logo.png);
+    height:100px;
+    width:100px;
+    background-size:contain;
+    background-repeat: no-repeat;
+    display:block;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+  }
+  
+}
+
