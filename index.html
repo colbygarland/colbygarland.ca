@@ -17,7 +17,6 @@
 
   <meta name="Description" content="Join me on my journey to drink ALL the #PSL's!!">
 
-  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet"> 
   <link href="css/main.css" rel="stylesheet">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -28,6 +27,18 @@
     gtag('js', new Date());
 
     gtag('config', 'UA-115141806-1');
+  </script>
+
+  <script type="text/javascript">
+
+    // script to add up all the cups and calories etc.
+    var number_of_coffees = 21;
+    var dollars  = number_of_coffees * 5.25;
+    var ounces   = number_of_coffees * 16;
+    var calories = number_of_coffees * 380;
+    var sugar    = number_of_coffees * 50;
+    var fat      = number_of_coffees * 14;
+
   </script>
 
 
@@ -49,7 +60,11 @@
             <div class="underline"></div>
             <h3>#psl count</h3>
             <div class="count">
-              <span>21</span>
+              <span id="Count">
+                <script type="text/javascript">
+                  document.write(number_of_coffees);
+                </script>
+              </span>
             </div>
           </div>
           <div class="col-lg-4">
@@ -73,31 +88,51 @@
             <div class="info-boxes">
               <div class="info-box">
                 <div class="info-box-bg">
-                  <h3>110.25</h3>
+                  <h3>
+                    <script type="text/javascript">
+                      document.write(dollars);
+                    </script>
+                  </h3>
                   <p>DOLLARS</p>
                 </div>
               </div>
               <div class="info-box">
                 <div class="info-box-bg">
-                  <h3>336</h3>
+                  <h3>
+                    <script type="text/javascript">
+                      document.write(ounces);
+                    </script>
+                  </h3>
                   <p>FLUID OUNCES</p>
                 </div>
               </div>
               <div class="info-box">
                 <div class="info-box-bg">
-                  <h3>7980</h3>
+                  <h3>
+                    <script type="text/javascript">
+                      document.write(calories);
+                    </script>
+                  </h3>
                   <p>CALORIES</p>
                 </div>
               </div>
               <div class="info-box">
                 <div class="info-box-bg">
-                  <h3>1050</h3>
+                  <h3>
+                    <script type="text/javascript">
+                      document.write(sugar);
+                    </script>
+                  </h3>
                   <p>GRAMS OF SUGAR</p>
                 </div>
               </div>
               <div class="info-box">
                 <div class="info-box-bg">
-                  <h3>294</h3>
+                  <h3>
+                    <script type="text/javascript">
+                      document.write(fat);
+                    </script>
+                  </h3>
                   <p>GRAMS OF FAT</p>
                 </div>
               </div>
@@ -112,11 +147,12 @@
   <footer class="content">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-5">
           <h3 class="tan-color">want to support my addiction?</h3>
           <div><script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy me a PSL', '#46b798', 'R6R6JLTY');kofiwidget2.draw();</script> </div>
           <h3>You can buy me a coffee!</h3>
         </div>
+        <div class="col-lg-1"></div>
         <div class="col-lg-6">
           <h3 class="tan-color">Want to know more about the pumpkin spice latte?</h3>
           <a href="https://www.starbucks.com/menu/drinks/espresso/pumpkin-spice-latte" class="btn btn-green" target="_blank">more details here</a>
@@ -124,13 +160,5 @@
       </div>
     </div>
   </footer>
-
-  <!--<div class="cups">
-
-
-
-  </div> -->
-  
-  <!--<div style="position:absolute;top:40px;left:50%;transform:translateX(-50%);"><script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy me a PSL', '#46b798', 'R6R6JLTY');kofiwidget2.draw();</script> </div>-->
 
 </body>
