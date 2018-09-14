@@ -49,6 +49,9 @@ h1 {
   color:$green;
   font-size:70px;
   margin-bottom:0;
+  @media (min-width:992px){
+    font-size:100px;
+  }
 }
 
 h3 {

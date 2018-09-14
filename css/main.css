@@ -337,6 +337,9 @@ h1 {
   color: #00653b;
   font-size: 70px;
   margin-bottom: 0; }
+  @media (min-width: 992px) {
+    h1 {
+      font-size: 100px; } }
 
 h3 {
   text-transform: uppercase;
