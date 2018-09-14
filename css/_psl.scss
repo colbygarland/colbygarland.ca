@@ -8,24 +8,11 @@ $sleeve:#755845;
   align-items: center;
 }
 
-body {
-  background-color: #ffffff;
-  font-family:'Merriweather', serif;
-}
-
-h1 {
-  text-align:center;
-  font-size:50px;
-}
-
-.counter {
-  color:#067655;
-  font-size:70px;
-}
-
 .cup {
   position:relative;
   width:250px;
+  height:500px;
+  margin:0 auto;
 }
 
 .lid {

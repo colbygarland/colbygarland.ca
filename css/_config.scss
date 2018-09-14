@@ -1,51 +1,115 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+$green: #00653b;
+$tan: #c69c6c;
+$grey: #e6e6e6;
 
-$primary: #0cd07e;
-$secondary: #f37978;
-$tertiary:#b285a4;
-$font-body: 'Open Sans', sans-serif;
-$text-color:#333;
-$hover-color:$primary;
-$bg:#eeeeee;
-$grey:#717171;
-$bar1:#f37978;
-$bar2:#b285a4;
-$bar3:#80819f;
-$bar4:#637194;
+/* Webfont: Everglow */
+@font-face {
+  font-family: 'Everglow';
+  src: url('../fonts/Everglow-Script.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Everglow-Script.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/Everglow-Script.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/Everglow-Script.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/Everglow-Script.svg#Everglow') format('svg'); /* Legacy iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/AvenirLTSTD-Book.otf'); /* IE9 Compat Modes */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: 'Avenir Bold';
+  src: url('../fonts/AvenirLTSTD-Heavy.otf'); /* IE9 Compat Modes */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
 
-// Boilerplate code
-
-.ir {
-
-  display:block;
-  text-indent:200%;
-  white-space:nowrap;
-  overflow:hidden;
-
+body {
+  margin:0;
+  text-align:center;
+  font-family:'Avenir Bold', sans-serif;
 }
 
 * {
   box-sizing:border-box;
 }
 
-img {
 
-  max-width:100%;
-  height:auto;
-
+.tan-color {
+  color:$tan;
 }
 
-.row {
-  margin:0;
+h1 {
+  font-family:'Everglow';
+  color:$green;
+  font-size:70px;
+  margin-bottom:0;
 }
 
-@mixin flexbox() {
-  display:-ms-flexbox;
-  display:flex;
-  -ms-flex-wrap:wrap;
-  flex-wrap:wrap;
+h3 {
+  text-transform:uppercase;
+  font-size:30px;
 }
 
-::selection {
-    background: $tertiary;
+.btn {
+  text-transform:uppercase;
+  padding:15px 30px;
+  border-radius:5px;
+  font-weight:bold;
+  text-decoration: none;
+  display:inline-block;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+.btn-green {
+  background:$green;
+  transition:0.3s;
+  color:#fff;
+  &:hover, &:active, &:focus {
+    background:darken($green, 10%);
+    color:#fff;
+  }
+}
+
+.underline {
+  height:1px;
+  width:100%;
+  background:#222;
+  margin-bottom:30px;
+}
+
+.green-bg {
+  background:$green;
+  color:#fff;
+  .underline {
+    background:#fff;
+  }
+}
+
+.count {
+
+  background-image:url(../img/Pumpkin.svg);
+  background-size:contain;
+  height:200px;
+  width:200px;
+  background-repeat: no-repeat;
+  margin:0 auto;
+  position: relative;
+
+  span {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size:80px;
+    margin-top:2px;
+    margin-left:2px;
+  }
+
 }

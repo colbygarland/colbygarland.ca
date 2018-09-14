@@ -1,0 +1,12 @@
+/* Webfont: Everglow */@font-face {
+    font-family: 'Everglow';
+    src: url('Everglow Script.eot'); /* IE9 Compat Modes */
+    src: url('Everglow Script.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Everglow Script.woff') format('woff'), /* Modern Browsers */
+         url('Everglow Script.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Everglow Script.svg#Everglow') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
