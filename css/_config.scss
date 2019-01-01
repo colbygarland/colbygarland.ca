@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
-$primary: #0cd07e;
-$secondary: #f37978;
+// Colours
+$green: #0cd07e;
+$pink: #da1b60;
+$primary: $green;
+$secondary: $pink;
 $tertiary:#b285a4;
-$font-body: 'Open Sans', sans-serif;
 $text-color:#333;
 $hover-color:$primary;
-$bg:#eeeeee;
-$grey:#717171;
-$bar1:#f37978;
-$bar2:#b285a4;
-$bar3:#80819f;
-$bar4:#637194;
+$bg: #eee;
+
+// Fonts
+$font-body: 'Roboto', sans-serif;
+$font-headers: 'Abril Fatface', cursive;
+$transition: 0.5s ease-out;
 
 // Boilerplate code
 
@@ -35,17 +35,7 @@ img {
 
 }
 
-.row {
-  margin:0;
-}
-
-@mixin flexbox() {
-  display:-ms-flexbox;
-  display:flex;
-  -ms-flex-wrap:wrap;
-  flex-wrap:wrap;
-}
-
 ::selection {
-    background: $tertiary;
+  background: $secondary;
+  color:#fff;
 }
