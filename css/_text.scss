@@ -129,8 +129,16 @@ h5 {
 }
 
 .no-list-style {
+
   padding-left: 0;
   list-style: none;
+
+  li {
+    @include media-breakpoint-up(md){
+      margin-bottom:15px;
+    }
+  }
+
 }
 
 .horizontal-list {
