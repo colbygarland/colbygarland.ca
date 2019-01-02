@@ -6,7 +6,7 @@ body {
   color:$text-color;
 
   @include media-breakpoint-up(md){
-    font-size:24px;
+    font-size:21px;
   }
 
 }
@@ -17,6 +17,7 @@ a {
   transition:$transition;
   text-decoration: none;
   position: relative;
+  font-weight:700;
 
   &:after {
     content:'';
@@ -38,6 +39,10 @@ a {
 
 p {
   line-height:1.8;
+  font-weight:300;
+  strong {
+    font-weight:700;
+  }
 }
 
 h1 {
@@ -59,7 +64,40 @@ h1 {
 
 h2 {
   font-family:$font-headers;
-  font-size:calc( 30px + 4vw );
+  font-size:calc( 30px + 3vw );
+}
+
+h3 {
+  font-family:$font-headers;
+  font-size:calc( 30px + 1.5vw );
+  position: relative;
+  display:inline-block;
+  &:after {
+    content:'';
+    background:$primary;
+    height:18px;
+    width:100%;
+    display:block;
+    position: relative;
+    z-index:-1;
+    bottom:20px;
+  }
+}
+
+h5 {
+  font-family:$font-headers;
+  font-size:calc( 20px + 0.5vw );
+  display:inline-block;
+  &:after {
+    content:'';
+    background:$primary;
+    height:8px;
+    width:100%;
+    display:block;
+    position: relative;
+    z-index:-1;
+    bottom:10px;
+  }
 }
 
 .fun-list {
