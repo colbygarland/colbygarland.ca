@@ -51,7 +51,7 @@
           <div class="row">
             <div class="col-md-8 col-lg-6">
               <ul class="no-list-style">
-                <li class="aos-init" data-aos="fade-up" data-aos-delay="400"><i class="fa fa-hand-peace-o"></i> Web Developer / Programmer</li>
+                <li class="aos-init" data-aos="fade-up" data-aos-delay="400"><i class="fa fa-hand-peace-o"></i> <span class="job-title"></span></li>
                 <li class="aos-init" data-aos="fade-up" data-aos-delay="550"><i class="fa fa-mobile"></i> 780 882 4742</li>
                 <li class="aos-init" data-aos="fade-up" data-aos-delay="650"><i class="fa fa-envelope"></i> hello [at] colbygarland [dot] ca</li>
                 <li class="aos-init" data-aos="fade-up" data-aos-delay="750"><i class="fa fa-linkedin"></i> <a href="https://www.linkedin.com/in/colbygarland/" target="_blank">LinkedIn</a></li>
@@ -73,9 +73,14 @@
 
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script/typed.min.js"></script>
   <script>
     AOS.init({
        duration: 1000
+    });
+    var typed = new Typed('.job-title', {
+      strings: ["^1200Web developer.", "^1200Programmer.", "^1200Occasional graphic designer.", "^1200Software engineer."],
+      typeSpeed: 60
     });
   </script>
   <!--<script src="https://cdn.jsdelivr.net/npm/vue"></script>
