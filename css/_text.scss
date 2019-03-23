@@ -9,6 +9,14 @@ body {
     font-size:21px;
   }
 
+  &.dark-mode {
+    background:#222;
+    color:#eee;
+    a,h1,h2,h3,h4,h5,h6,p,li,i {
+      color:#eee;
+    }
+  }
+
 }
 
 a {

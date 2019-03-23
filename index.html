@@ -35,16 +35,16 @@
 
 </head>
 
-<body>
+<body id="app">
 
-  <!--<div class="toggle">
-    <input class="toggle-input" type="checkbox" />
+  <div class="toggle" id="click-toggle">
+    <input class="toggle-input" id="toggle-mode" type="checkbox" />
     <div class="toggle-bg"></div>
     <div class="toggle-switch">
       <div class="toggle-switch-figure"></div>
       <div class="toggle-switch-figureAlt"></div>
     </div>
-  </div>-->
+  </div>
 
   <header class="aos-init" data-aos="fade-up">
     <div class="container">
@@ -83,6 +83,26 @@
     AOS.init({
        duration: 1000
     });
+
+    let mode = document.cookie;
+    if ( mode === 'mode=dark'){
+      document.getElementById('app').className = 'dark-mode';
+    } else {
+      document.getElementById('app').className = 'light-mode';
+    }
+    console.log(mode);
+
+    document.getElementById("toggle-mode").addEventListener("click", toggleMode);
+    function toggleMode(){
+      document.getElementById('app').classList.toggle('dark-mode');
+      if ( document.getElementById("toggle-mode").checked ){
+        document.cookie = "mode=dark";
+      } else {
+        document.cookie = "mode=light";
+      }
+      console.log('cookie = ' + mode);
+    }
+
   </script>
 
 </body>
