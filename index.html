@@ -32,13 +32,17 @@
   <script type="text/javascript">
 
     // script to add up all the cups and calories etc.
-    let number_of_coffees_2018 = 31;
-    let number_of_coffees = 17;
+    //let number_of_coffees_2018 = 31;
+    //let number_of_coffees_2019 = 17;
+    let number_of_coffees = 1;
     let dollars  = number_of_coffees * 5.45;
     let ounces   = number_of_coffees * 16;
     let calories = number_of_coffees * 380;
     let sugar    = number_of_coffees * 50;
     let fat      = number_of_coffees * 14;
+    
+    let date = new Date();
+    let year = date.getFullYear();
 
   </script>
 
@@ -57,7 +61,13 @@
         <div class="row">
           <div class="col-lg-8">
             <h1>Welcome,</h1>
-            <h3 class="tan-color">to my 2019 psl addiction</h3>
+            <h3 class="tan-color">
+              to my 
+              <script type="text/javascript">
+                  document.write(year);
+              </script>
+              psl addiction
+            </h3>
             <div class="underline"></div>
             <h3>#psl count</h3>
             <div class="count">
