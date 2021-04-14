@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-body text-copy;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-header;
+  }
+  a {
+    @apply relative transition-all duration-500 font-bold hover:text-primary;
+  }
+  a:after {
+    content: '';
+    @apply w-0 transition-all duration-500 bg-primary block absolute -bottom-0.5 left-0;
+    height: 2px;
+  }
+  a:hover:after {
+    width: 100%;
+  }
+  p {
+    @apply font-thin text-lg;
+  }
+}
+
+@layer utilities {
+  .text-header {
+    font-size: calc(40px + 5vw);
+  }
+  .header-bar {
+    margin-top: calc(-30px - 2vw);
+    height: calc(20px + 2vw);
+  }
+}

@@ -1,7 +1,14 @@
-export default function Home() {
+import { AboutList } from '../components/aboutList';
+import Link from 'next/link';
+
+const Home = () => {
   return (
-    <div>
-      <h1>Colby Garland NextJS</h1>
-    </div>
+    <>
+      <AboutList />
+      <p>
+        View my work <Link href="/work">here.</Link>
+      </p>
+    </>
   );
-}
+};
+export default Home;
